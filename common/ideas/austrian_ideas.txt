@@ -1,0 +1,137 @@
+ideas = {
+
+	country = {
+		AUS_declining_empire = {
+
+			allowed = {
+				original_tag = AUS 
+				always = no
+			}
+
+			picture = AUS_habsburg_monarchy_restored
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.25
+				war_support_factor = -0.2
+			}
+		}
+		AUS_glory_of_1866 = {
+
+			allowed = {
+				original_tag = AUS 
+				always = no
+			}
+
+			picture = AUS_empire_restored
+
+			modifier = {
+				war_support_factor = 0.15
+			}
+
+			targeted_modifier = {
+				tag = PRE 
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+			}
+		}
+		AUS_european_model = {
+
+			allowed = {
+				original_tag = AUS 
+				always = no
+			}
+
+			picture = gfx
+
+			modifier = {
+				political_power_gain = 0.3
+			}
+		}
+		AUS_hungarian_opposition = {
+
+			allowed = {
+				original_tag = AUS 
+				always = no
+			}
+
+			available = {
+				OR = {
+					has_subject = HUN 
+					NOT = {
+						country_exists = HUN
+					}
+				}
+			}
+
+			picture = HUN_hungarian_gendarmerie
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		AUS_southern_advantage = {
+
+			allowed = {
+				original_tag = AUS 
+				always = no
+			}
+
+			available = {
+				has_subject = LBV
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		AUS_austrian_general_staff = {
+
+			allowed = {
+				original_tag = AUS 
+				always = yes
+			}
+
+			picture = generic_general_staff
+
+			modifier = {
+				army_org_factor = 0.05
+				max_planning_factor = 0.25
+			}
+		}
+		AUS_imperial_bureaucracy = {
+
+			allowed = {
+				original_tag = AUS 
+				always = no
+			}
+
+			picture = idea_ETH_corrupt_bureaucracy
+
+			modifier = {
+				political_power_factor = 0.1
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.02
+			}
+		}
+		AUS_danubian_economic_sphere = {
+
+			allowed = {
+				original_tag = AUS 
+				always = no
+			}
+
+			picture = idea_HABSBURG_economy
+
+			modifier = {
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		AUS_
+	}
+}
